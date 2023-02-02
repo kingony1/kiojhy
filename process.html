@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>บทเรียนคอมพิวเตอร์เบื้องต้น</title>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body bgcolor="#9B55FF" background="คอมพิวเตอร์เบื้องต้น.png" text="#FFFFFF" onLoad="MM_preloadImages('2.png','New folder/2.png','New folder/4.png','New folder/6.png','New folder/8.png')">
+<table width="1590" border="0" align="center">
+  <tbody>
+    <tr>
+      <td colspan="2"><p><img src="h.png" width="1600" height="250" alt=""/></p></td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#ED888A"><p><marquee direction="right" style="color: #FFFFF0"> ยินดีต้อนรับนะเจ้ะ </marquee></p></td>
+    </tr
+    <tr>
+      <td width="262" align="left" valign="top"><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','2.png',1)"></a></td>
+          </tr>
+          </tbody>
+      </table>
+        <a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','New folder/2.png',1)"><img src="New folder/1.png" alt="" width="250" height="50" id="Image2"></a>
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td><a href="process.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','New folder/4.png',1)"><img src="New folder/3.png" alt="" width="250" height="50" id="Image3"></a></td>
+            </tr>
+            <tr>
+              <td><a href="component.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','New folder/6.png',1)"><img src="New folder/5.png" alt="" width="250" height="50" id="Image4"></a></td>
+            </tr>
+            <tr>
+              <td><a href="pratu.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','New folder/8.png',1)"><img src="New folder/7.png" alt="" width="250" height="50" id="Image5"></a></td>
+            </tr>
+          </tbody>
+      </table></td>
+      <td width="1312" align="center" valign="top"><table width="95%" border="0" align="center">
+        <tbody>
+          <tr>
+            <td align="center" bgcolor="#D055FF"><p>หลักการทำงาน</p>
+              <div>การทำงานของคอมพิวเตอร์จะเริ่มจากผู้ใช้ป้อนข้อมูลผ่านทางอุปกรณ์ของหน่วยรับเข้า  (Input  device)  เช่น  คีย์บอร์ด  เมาส์  ข้อมูลจะถูกเปลี่ยนให้เป็นสัญญาณดิจิทัล  ประกอบด้วยเลข  0  และ  1  แล้วส่งต่อไปยังหน่วยประมวลผลกลาง  เพื่อประมวลผลตามคำสั่ง  ในระหว่างการประมวลผลข้อมูลจะถูกเก็บไว้ที่  (Random  Access  Memory:  RAM)  ทำหน้าที่เก็บข้อมูลจากการประมวลผลเป็นการชั่วคราว  ขณะเดียวกัน  อาจมีคำสั่งให้นำผลลัพธ์จากการประมวลผลดังกล่าวไปแสดงผลผ่านทางอุปกรณ์ผ่านทางอุปกรณ์ของหน่วยส่งออก  เช่น จอภาพ  หรือ  เครื่องพิมพ์  นอกจากนี้เราสามารถบันทึกข้อมูลที่อยู่ในอนาคต  โดยการอ่านข้อมูลที่บันทึกในสื่อดังกล่าวผ่านทางเครื่องขับหรือไดร์ฟ  (drive)  การส่งผ่านข้อมูลไปยังหน่วยต่างๆ  ภายในระบบคอมพิวเตอร์จะผ่านทางระบบบัส  (bus)  อุปกรณ์ของหน่วยรับเข้าและส่งออก  จะเชื่อมต่อกับตัวเครื่องที่เรียกว่า ซิสเต็มยูนิต  (System  unit)  มี  เคส  (case)  เป็นโครงยืดให้อุปกรณ์ต่างๆประกอบกัน  ภายในเคสจะมีเมนบอร์ด  (Mainboard)  เป็นแผนวงจรหลัก  โดยซีพียู  หน่วยความจำ  การ์ด  รวมถึงอุปกรณ์ต่างๆ  จะถูกต่อกับเมนบอร์ดนี้ทั้งสิ้น</div>
+              <div>
+              <div>
+              <div>
+              <div>
+              <br>
+              <p>&nbsp;</p></td>
+            </tr>
+        </tbody>
+      </table></td>
+  </tr>
+    <tr>
+      <td height="28">&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
